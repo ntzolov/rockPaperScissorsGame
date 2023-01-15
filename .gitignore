@@ -9,6 +9,8 @@
 *.user
 *.userosscache
 *.sln.docstates
+*.tmp.driveupload/
+*.tmp.drivedownload/
 
 # User-specific files (MonoDevelop/Xamarin Studio)
 *.userprefs
