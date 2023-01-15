@@ -1,4 +1,10 @@
+// You should use argument: "Rock", "Paper" or "Scissors" ("r"/"rock"/"Rock")
+rockPaperScissors('s');
+
+
+
 function rockPaperScissors(playerTurn) {
+
   const rock = 'Rock';
   const paper = 'Paper';
   const scissors = 'Scissors';
@@ -20,7 +26,8 @@ function rockPaperScissors(playerTurn) {
   ) {
     playerTurn = scissors;
   } else {
-    console.log('Invalid input! Try again...');
+    console.log('\x1b[31mInvalid input! Try again...\x1b[0m');
+		return
   }
 
   let computerRandomNumber = Math.floor(Math.random() * 3) + 1;
@@ -41,21 +48,19 @@ function rockPaperScissors(playerTurn) {
     (playerTurn === paper && computerTurn === rock) ||
     (playerTurn === scissors && computerTurn === paper)
   ) {
-    console.log('You win!');
+    console.log('\x1b[92mYou win!');
   } else if (
     (playerTurn === rock && computerTurn === rock) ||
     (playerTurn === paper && computerTurn === paper) ||
     (playerTurn === scissors && computerTurn === scissors)
   ) {
-    console.log('Draw!');
+    console.log('\x1b[93mDraw!');
   } else if (
     (playerTurn === rock && computerTurn === paper) ||
     (playerTurn === paper && computerTurn === scissors) ||
     (playerTurn === scissors && computerTurn === rock)
   ) {
-    console.log('You lost!');
+    console.log('\x1b[31mYou lost!');
   }
 }
 
-// You should use argument: "Rock", "Paper" or "Scissors" ("r"/"rock"/"Rock")
-rockPaperScissors('s');
