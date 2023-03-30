@@ -5,4 +5,4 @@ It's very basic and simple "Rock", "Paper" or "Scissors" game written in JavaScr
 
 [Link to source](rockPaperScissors.js)<br><br>
 
-It can be played only in a console (node.js)
+It can be played only in a console (node.js). You should choose r/p/s in the beginning of the code.
