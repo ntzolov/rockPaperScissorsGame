@@ -1,5 +1,5 @@
 // You should use argument: "Rock", "Paper" or "Scissors" ("r"/"rock"/"Rock")
-rockPaperScissors('s');
+rockPaperScissors('rock');
 
 
 
